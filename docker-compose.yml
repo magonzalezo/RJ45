@@ -18,7 +18,6 @@ services:
     container_name: cnt_servicio_2
     image: imagen_ms_calculadora
     ports:
-      - 8082:8080
       - 8083:9090
     depends_on:
       - microservice
