@@ -14,8 +14,14 @@ public class Calculadora {
 		return operando_1 * operando_2;
 	}
 	
-	public int dividir (int operando_1, int operando_2) {
+	public double dividir (int operando_1, int operando_2) {
 		return operando_1 / operando_2;
+	}
+	
+	public double potencia (int pBase, int pExponente) {
+		Double base = (double) pBase;
+		Double exponente = (double)pExponente;
+		return Math.pow(base, exponente);
 	}
 	
 }

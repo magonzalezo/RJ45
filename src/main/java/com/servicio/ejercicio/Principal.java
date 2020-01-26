@@ -32,6 +32,12 @@ public class Principal {
 		return "Resultado de la division: "+calculadora.dividir(num1, num2);
 	}
 	
+	@PostMapping("/potencia")
+	public String potenciar(@RequestParam("base") int base, @RequestParam("potencia") int potencia) {
+		Calculadora calculadora = new Calculadora();
+		return "El resultado de la potencia es: "+calculadora.potencia(base,potencia);
+	}
+	
 	@GetMapping("/prueba")
 	public String pruebaRetorno(@RequestParam("num1") int num1, @RequestParam("num2") int num2) {
 		return "Usted envió: "+num1+" y "+num2;
